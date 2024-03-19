@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="form">
+        <div>
+            <label for="">matematica</label>
+            <input required type="number" id="mate" onkeyup="Validar('mate')">
+        </div>
+        <div>
+            <label for="">lengua</label>
+            <input required type="number" id="lengua" onkeyup="Validar('lengua')">
+        </div>
+        <div>
+            <label for="">efsi</label>
+            <input required type="number" id="efsi" onkeyup="Validar('efsi')"> 
+        </div>
+        <button onclick="Promedio()">Calcular promedio</button>
+        <button onclick="Mayor()">Mostrar en que materia tuvo mayor nota</button>
+    </div>
+    <div>
+        // mostrar resultado
+    </div>
+</body>
+</html>
