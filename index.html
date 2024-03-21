@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h2><u>Calcular promedio y Mayor nota</u></h2>
+    <br>
     <div class="form">
         <div>
-            <label for="">matematica</label>
-            <input required type="number" id="mate" onkeyup="Validar('mate')">
+            <label for="mate">Matematica: </label>
+            <input required class="input" type="number" id="mate" onkeyup="Validar('mate')">
         </div>
         <div>
-            <label for="">lengua</label>
-            <input required type="number" id="lengua" onkeyup="Validar('lengua')">
+            <label for="lengua">Lengua: </label>
+            <input required class="input" type="number" id="lengua" onkeyup="Validar('lengua')">
         </div>
         <div>
-            <label for="">efsi</label>
-            <input required type="number" id="efsi" onkeyup="Validar('efsi')"> 
+            <label for="efsi">EFSI: </label>
+            <input required class="input" type="number" id="efsi" onkeyup="Validar('efsi')"> 
         </div>
+        
         <button onclick="Promedio()">Calcular promedio</button>
         <button onclick="Mayor()">Mostrar en que materia tuvo mayor nota</button>
     </div>
-    <div>
-        // mostrar resultado
+    <div id = "result">
     </div>
 </body>
 </html>
