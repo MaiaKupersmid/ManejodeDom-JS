@@ -24,11 +24,13 @@
             <label for="efsi">EFSI: </label>
             <input required class="input" type="number" id="efsi" onkeyup="Validar('efsi')"> 
         </div>
-        
-        <button onclick="Promedio()">Calcular promedio</button>
-        <button onclick="Mayor()">Mostrar en que materia tuvo mayor nota</button>
-    </div>
-    <div id = "result">
+        <div id = "result">
+            <button onclick="mostrarResultados()">Mostrar resultados</button>
+            <br>
+
+            <h5 id= "promedio"> El promedio de las notas es: </h5>
+            <h5 id="alta"> La nota mas alta es en: </h5>
+        </div>
     </div>
 </body>
 </html>
